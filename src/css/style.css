@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+th {
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.main_container {
+  max-width: 80%;
+  min-width: 300px;
+  margin: 60px auto 0;
+  /*border: 1px solid black;*/
+}
+
+.above_container {
+  position: relative;
+  top: -35px;
+  margin-bottom: -35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headding {
+  font-size: 20px;
+  margin: 0 0;
+  padding-left: 3px;
+  font-weight: normal;
+}
+
+.button_add {
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: #f2f2f2;
+  font-weight: normal;
+  margin: 0;
+  padding: 3px;
+
+  cursor: pointer;
+}
+
+.popup_window,
+.popup_delete {
+  top: 35px;
+  left: calc(100% / 2 - 402px / 2);
+  width: 400px;
+  position: absolute;
+  display: none;
+  border: black 1px solid;
+  background-color: white;
+}
+
+.shown {
+  display: flex;
+}
+
+.form,
+.form-delete {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% - 2px);
+  padding: 20px 25px;
+}
+
+.form input,
+form textarea {
+  font-size: 14px;
+  border: black 1px solid;
+  border-radius: 6px;
+}
+
+.form h2,
+.form-delete h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.form-delete {
+  text-align: center;
+}
+
+.form_buttons {
+  padding: 15px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form_buttons button {
+  width: 6.5rem;
+  height: 1.6rem;
+  border: black 1px solid;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.table {
+  flex-direction: column;
+  width: calc(100% - 20px);
+  margin: 20px 10px 10px;
+  border-collapse: collapse;
+}
+
+.table_row {
+  border: 1px solid black;
+}
+
+.table_row td:nth-child(2),
+.table_row th:nth-child(2) {
+  width: 60%;
+  text-align: left;
+  word-wrap: break-word;
+  flex-grow: 6;
+}
+
+.table_row td,
+.table_row th {
+  flex-grow: 1;
+  text-align: right;
+  max-width: unset;
+  padding: 10px;
+}
+
+.table_row td:first-child {
+  text-align: left;
+}
+
+.form-error {
+  position: absolute;
+  padding: 5px 10px;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.form-header h2 {
+  text-align: center;
+}
+
+.form textarea {
+  resize: none;
+  height: 4rem;
+}
+
+.description {
+  padding-top: 30px;
+}
+
+.status,
+.update,
+.remove,
+.item {
+  cursor: pointer;
+}
+
+.loading-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10000;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-header {
+  text-align: center;
+}
